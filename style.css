@@ -1,0 +1,110 @@
+
+:root {
+    /*color-scheme: light dark;*/
+    --color: light-dark(black, white);
+    --background-color: light-dark(white, black);
+    --border: light-dark(black, white);
+    --accent: light-dark(rgb(255, 204, 0), rgb(255, 204, 0)); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--color);
+}
+
+body {
+    background-color: var(--background-color);
+    display: grid;
+    height: 100svh;
+    width: 100vw;
+    grid-template-rows: min-content min-content;
+}
+
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 10px;
+    padding-bottom: 5px;
+    width: calc(100% - 20px);
+    justify-content: start;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+}nav * {
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 10px 20px 15px;
+    height: fit-content;
+    font-weight: 800;
+    font-size: 1.25rem;
+}nav *:first-child {
+    margin-left: 10px;
+}nav h1 {
+    font-size: 2rem;
+}nav::-webkit-scrollbar {
+    width: 0px;
+}
+
+.active {
+    color: var(--accent);
+    color: rgb(175, 117, 55);
+    color: rgb(176, 117, 55);
+    color: rgb(255, 240, 189);
+    color: rgb(235, 190, 89);
+    color: rgb(222, 166, 0);
+    color: rgb(255, 204, 0);
+    border-bottom: 4px solid var(--accent);
+    font-size: 1.75rem;
+}
+
+
+summary {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    margin: 15px 30px;
+}summary a {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-bottom: solid 1px var(--border);
+}summary p {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+
+main {
+    margin: 20px 30px;
+}
+section {
+    margin: 0 0 80px;
+}section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}section p {
+    margin: 20px 5px;
+    font-size: 1.25rem;
+}
+
+
+table, tr, th, td {
+    border: 1px solid;   
+}table {
+    width: 100%;
+}
+th {
+    width: 50%;
+}
+
+ul {
+    margin-left: 2dvi;
+}

@@ -45,8 +45,6 @@ nav {
     margin-left: 10px;
 }nav h1 {
     font-size: 2rem;
-}nav::-webkit-scrollbar {
-    width: 0px;
 }
 
 .active {
@@ -86,7 +84,7 @@ main {
     margin: 20px 30px;
 }
 section {
-    margin: 0 0 80px;
+    margin: 0 0 50px;
 }section h2 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -100,11 +98,40 @@ table, tr, th, td {
     border: 1px solid;   
 }table {
     width: 100%;
+    border-radius: 13px;
 }
-th {
+td, th {
+    padding: 5px;
+}th {
     width: 50%;
+    font-weight: 900;
+    font-size: 1.25rem;
+}td {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
+.tr {
+    border-radius: 10px 0 0 0;
+}.tl {
+    border-radius: 0 10px 0 0;
+}.br {
+    border-radius: 0 0 0 10px;
+}.bl {
+    border-radius: 0 0 10px 0;
+}
+
+
 
 ul {
     margin-left: 2dvi;
+}li {
+    font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 1600px) {
+    nav::-webkit-scrollbar {
+        width: 0;
+    } 
 }

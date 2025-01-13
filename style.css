@@ -141,6 +141,9 @@ h3 {
     color: rgb(160, 160, 255);
 }
 
+span {
+    font-weight: 600;
+}
 
 
 @media (max-width: 1600px) {

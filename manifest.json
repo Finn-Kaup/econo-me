@@ -3,8 +3,8 @@
     "short_name": "Econo=me",
     "description": "Econo=me Website from Clemens, Joscha, Marvin, Robert and Finn",
     "display": "fullscreen",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
+    "background_color": "#000000",
+    "theme_color": "#000000",
     "start_url": "/",
     "scope": "/"
 }
